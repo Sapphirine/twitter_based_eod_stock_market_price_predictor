@@ -1,0 +1,6 @@
+#!/bin/bash
+# Bash script for unzipping all files and 
+# removing the zipped versions
+bzip2 -d *
+rm -rf *.bz2
+            

@@ -1,0 +1,9 @@
+#!/bin/bash
+# Bash script for finding all files with the 'bz2' extension,
+# unzipping them, and then removing the zipped versions
+for d in $( find ./ -name '*.bz2' );
+    do( bzip2 -d $d );
+done;
+for d in $( find ./ -name '*.bz2' )
+    do( rm -rf $d);
+done;

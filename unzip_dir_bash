@@ -1,0 +1,6 @@
+#!/bin/bash
+# Bash script for stepping into sub-directories and 
+# running the unzip_bash script within them
+for d in ./*/;
+do( cd "$d" && ../unzip_bash );
+done;

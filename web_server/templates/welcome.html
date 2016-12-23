@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hello, World!</title>
+	<link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<br></br>
+	<br></br>
+	<br></br>
+	<div class = "containter">
+		<div class = 'col-md-3'></div>
+		<div class = 'col-md-6'>
+
+		<img src='/static/logo.png' width=100% style="display: block; margin-left: auto; margin-right: auto ">
+
+
+		</div>
+		<div class = 'col-md-3'></div>
+		<form id="input" method="post" action="/welcome">
+			<div class="form-group row">
+				<div class="form-group row"></div>
+				<div class="form-group row"></div>
+				<div class="form-group row"></div>
+				<div class = 'col-md-4'></div>
+				<div class = 'col-md-4'>
+					<h2>Please enter the company stock quote:<br /></h2>
+					<input class="form-control" id="stock_name" name="stock_name" placeholder="AAPL, MSFT, VZ, T, WMT, AMZN, DIS, NFLX and etc.">
+					<br></br>
+					<h2>Please enter the text to predict:<br /></h2>
+					<input class="form-control" id="Twitter_text" name="Twitter_text" placeholder="Columbia University is Great!">
+				</div>
+				<div class = 'col-md-4'></div>
+			</div>
+			<div class="form-group row"></div>
+			<div class="form-group row"></div>
+			<div class="form-group row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						  <div class="btn-group" role="group">
+	    				<button type="submit" class="btn btn-info">Predict</button>
+	  					</div>
+	  				</div>
+					
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+	<div class = "row"></div>
+	<div class = "row"></div>
+	<div class = "row"></div>
+	<div class = "row"></div>
+	<div class = "row"></div>
+		</form>
+
+	</div> 
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<footer class = "footer" >
+	<div class = 'col-md-3'></div>
+	<div class = 'col-md-1'></div>
+	<div class = 'col-md-4'><p class = "text-center">EE6893 Big Data Analytics - Web App <p></div>
+	<div class = 'col-md-4'><p class = "text-right">© 2016 Columbia University Nan Zhao, Sabina Smajlaj, Ben Zhu</p></div>
+	</footer>
+
+</body>
+</html>
+

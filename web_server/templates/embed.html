@@ -1,0 +1,74 @@
+<!doctype html>
+<title>Information</title>
+<html lang="en">
+<head>
+	<meta charset='utf-8' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8' />
+	<link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<title>Show graph</title>
+
+	{{ js_resources|indent(4)|safe }}
+
+	{{ css_resources|indent(4)|safe }}
+
+	{{ plot_script|indent(4)|safe }}
+
+</head>
+
+<body>
+	<br></br>
+	<br></br>
+	<div class = "containter">
+		<div class = "row">
+			<div class = "col-md-3"></div>
+			<div class = "col-md-4">
+				<img src='/static/embeded_title.png' width=70% style="display: block; margin-left:auto ; margin-right: 0 ">
+			</div>
+			<div class = "col-md-1">
+				<h1 class = "text-primary" font-size=8.9vw>{{Company_Name}}</h1>
+			</div>
+			<div class = "col-md-5"></div>
+		</div>
+		<div class = "row">
+			<br></br>
+			<br></br>
+		</div>
+		<div class = "row"></div>
+		<div class = "row">
+			<div class = "col-md-2"></div>
+			<div class = "col-md-4">
+				{{ plot_div|indent(4)|safe }}
+			</div>
+			<div class = "col-md-4">
+				<img src={{logo_path}} style="display: block; margin-left: auto; margin-right: auto ">
+				<img src={{good_or_bad}} width=40% style="display: block; margin-left: auto; margin-right: auto ">
+			</div>
+			<div class = "col-md-2"></div>
+		</div>
+		<div class = "row"></div>
+		
+			<div class = "row">
+				<div class = "col-md-2"></div>
+				<div class = "col-md-4">
+
+					<h2>The tweet to predict :<br /></h2>
+					<p><mark>{{Twitter_text}}</mark></p>
+				</div>
+				<div class = "col-md-6"></div>
+			</div>
+		<div class = "row">	
+			<div class = "col-md-8"></div>
+			<div class = "col-md-2">
+								<div class="btn-group btn-group-justified" role="group" aria-label="...">
+						  <div class="btn-group" role="group">
+	    				<button type="submit" class="btn btn-info"><a href='/welcome'>Back</a></button>
+	  					</div>
+			</div>
+			<div class = "col-md-2"></div>
+		</div>
+	</div>
+</body>
+</html>
